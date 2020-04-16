@@ -1,0 +1,93 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --light-color: #E1E1E1;
+    --grey-border-color: #D4D4D4;
+    --grey-text-color: #8B8B8B;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+ul li article {
+    margin-bottom: 3rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+article .title a, .title a:active {
+}
+
+article .title a, article .title a:active {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--caption-color);
+}
+
+article .information {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: var(--grey-text-color);
+}
+
+article .body {
+    color: var(--black-color);
+    border-left: 0.3rem solid var(--grey-border-color);
+    padding-left: 1rem;
+}
+
+article .attachment {
+    position: relative;
+    color: var(--grey-text-color);
+    font-size: small;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+article .attachment li {
+    line-height: 1.2rem;
+    list-style-type: none;
+    padding-left: 25px;
+    background: url("../img/paperclip-16x16.png") no-repeat 2px 2px;
+}
+
+article .footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 1.5em;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+article .footer .left {
+    padding-left: 0.5rem;
+    color: green;
+    font-weight: bold;
+    font-size: 1.1rem;
+    float: left;
+    display: inline-flex;
+}
+
+article .footer .left .positive-score {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.3rem;
+}
+
+article .footer .right {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-right: 0.5rem;
+}
+
+article .footer .right img {
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+}

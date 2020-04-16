@@ -1,0 +1,35 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --light-color: #E1E1E1;
+    --grey-border-color: #D4D4D4;
+    --grey-text-color: #8B8B8B;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.datatable .caption {
+    color: var(--black-color);
+    background: var(--light-color);
+    border-collapse: collapse;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 0.3rem 0 0.3rem 0.5rem;
+}
+
+.datatable table tbody tr:nth-child(2n-1) {
+    background: #f8f8f8;
+}
+
+.datatable table td, .datatable table th {
+    text-align: center;
+    padding: 0.4rem;
+    border: 1px solid var(--light-color);
+}
+
+.datatable table {
+    width: 100%;
+    border-collapse: collapse;
+}

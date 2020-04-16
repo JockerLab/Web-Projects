@@ -1,0 +1,316 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --light-color: #E1E1E1;
+    --grey-border-color: #D4D4D4;
+    --grey-text-color: #8B8B8B;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+html {
+    padding: 1rem;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+header nav {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 0.25rem;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.75rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+header nav .search {
+    position: absolute;
+    margin-top: 0.7rem;
+    margin-right: 0.5rem;
+    right: 0;
+    top: 0;
+}
+
+header nav .search input {
+    border: 1px solid var(--grey-border-color);
+    color: #666;
+    font-size: 0.8rem;
+    width: 9rem;
+    padding: 0.1rem 0.1rem 0.1rem 1rem;
+    background: #f4f4f4 url("../img/search-16x16.png") no-repeat 2px 2px;
+    background-size: 0.8rem;
+}
+
+/*              2 task                 */
+
+.datatable .caption {
+    color: var(--black-color);
+    background: var(--light-color);
+    border-collapse: collapse;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 0.3rem;
+}
+
+.datatable table tbody tr:nth-child(2n-1) {
+    background: #f8f8f8;
+}
+
+.datatable table td, .datatable table th {
+    text-align: center;
+    padding: 0.4rem;
+    border: 1px solid var(--light-color);
+}
+
+.datatable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*              3 task                 */
+
+article .title {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+article .information {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: var(--grey-text-color);
+}
+
+article .body {
+    color: var(--black-color);
+    border-left: 0.3rem solid var(--grey-border-color);
+    padding-left: 1rem;
+}
+
+article .attachment {
+    position: relative;
+    color: var(--grey-text-color);
+    font-size: small;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+article .attachment li {
+    line-height: 1.2rem;
+    list-style-type: none;
+    padding-left: 25px;
+    background: url("../img/paperclip-16x16.png") no-repeat 2px 2px;
+}
+
+article .footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 1.5em;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+article .footer .left {
+    padding-left: 0.5rem;
+    color: green;
+    font-weight: bold;
+    font-size: 1.1rem;
+    float: left;
+    display: inline-flex;
+}
+
+article .footer .left .positive-score {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.3rem;
+}
+
+article .footer .right {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-right: 0.5rem;
+}
+
+article .footer .right img {
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+}
+
+/*              4 task                 */
+
+.login-form-box .header {
+    color: var(--caption-color);
+    font-weight: bold;
+    padding: 0.3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.login-form-box {
+    width: 30rem;
+    margin: auto;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.login-form-box .body {
+    margin-top: 1rem;
+    position: relative;
+    margin-left: 40%;
+}
+
+.login-form-box .body .field {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.login-form-box .body .field .name {
+    position: absolute;
+    right: 105%;
+    display: inline;
+}
+
+.login-form-box .body .field .value {
+    display: inline;
+}
+
+.login-form-box .body .field .error {
+    font-size: small;
+    color: red;
+}
+
+.login-form-box .body .links {
+    font-size: small;
+    text-align: right;
+    margin-right: 0.3rem;
+}
+
+.login-form-box .footer {
+    font-size: small;
+    border-top: 1px solid var(--border-color);
+    text-align: right;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.login-form-box .footer a {
+    margin-left: 0.5rem;
+}
+
+.login-form-box .body .checkbox-field {
+    padding-bottom: 1rem;
+}
+
+.login-form-box .body .button-field input {
+    padding-bottom: 1rem;
+    width: 5rem;
+    height: 1.5rem;
+}

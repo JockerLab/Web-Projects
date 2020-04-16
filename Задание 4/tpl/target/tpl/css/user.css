@@ -1,0 +1,50 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.middle main .data {
+    padding: 0.5rem 0 1rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    color: var(--black-color);
+    position: relative;
+}
+
+.data strong a {
+    font-size: 2rem;
+}
+
+.middle main .data ul, .middle main .data link {
+    max-width: 50%;
+}
+
+.middle main .data>a, .middle main .arrows {
+    font-size: 1.9rem;
+}
+
+.middle main .data img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    width: 120px;
+    max-width: 20%;
+}
+
+.middle main .arrows a {
+    text-decoration: none;
+    color: blue;
+    display: inline;
+}
+
+.middle main .arrows p {
+    color: lightgrey;
+    display: inline;
+}
